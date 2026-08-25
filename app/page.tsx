@@ -11,10 +11,11 @@ const experiences = [
     text: "Spend time at our family reindeer farm, meet and feed the herd, and hear personal stories about Sámi culture, reindeer herding and life in Kilpisjärvi.",
     details: ["Family-hosted storytelling", "Reindeer feeding and photos", "Warm Kammi hospitality"],
     images: {
-      primary: "/farm/sami-host.webp",
-      secondary: "/farm/kammi-gathering.webp",
+      primary: "/farm/family-night-reindeer.webp",
+      secondary: "/farm/reindeer-herder-stream.webp",
+      tertiary: "/farm/sami-host.webp",
     },
-    alt: "A family host in Sámi clothing and guests sharing time in the Kammi",
+    alt: "The Tornensis family welcoming guests to meet reindeer and learn about Sámi life",
     imageClass: "experience-image-sami",
   },
   {
@@ -25,8 +26,9 @@ const experiences = [
     text: "Meet the reindeer at our family farm, enjoy a traditional wooden sleigh ride around the farm, and gather for a short talk by the open fireplace.",
     details: ["Traditional wooden sleigh ride around the farm", "Guided reindeer feeding", "Short fireside talk"],
     images: {
-      primary: "/farm/sleigh-team.webp",
-      secondary: "/farm/feeding-summer.webp",
+      primary: "/farm/reindeer-sleigh-day.webp",
+      secondary: "/farm/reindeer-winter-sunset.webp",
+      tertiary: "/farm/sleigh-team.webp",
     },
     alt: "A family reindeer sleigh ride and guided feeding at the farm",
     imageClass: "experience-image-arctic",
@@ -101,7 +103,7 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand brand-logo" href="#top" aria-label="Kilpisjärvi Reindeer home">
+        <a className="brand brand-logo" href="#top" aria-label="Kilpis Reindeer home">
           <Image
             className="brand-logo-image"
             src="/brand/kilpisjarvi-reindeer-logo.png"
@@ -118,6 +120,7 @@ export default function Home() {
           <a href="#story">Our story</a>
           <a href="#getting-here">Getting here</a>
           <a href="#visit">Your visit</a>
+          <a href="/faq">FAQ</a>
         </nav>
 
         <a className="header-book" href="#book">
@@ -201,11 +204,11 @@ export default function Home() {
           <div className="family-photo family-photo-winter">
             <ImageCycle
               images={{
-                primary: "/farm/winter-field.webp",
-                secondary: "/farm/autumn-herd.webp",
-                tertiary: "/farm/living-tradition-heritage.webp",
+                primary: "/farm/heritage-family-rope.webp",
+                secondary: "/farm/heritage-family-camp.webp",
+                tertiary: "/farm/heritage-family-dogs.webp",
               }}
-              alt="Reindeer at the family farm and a family heritage photograph across generations"
+              alt="Historic photographs of an earlier generation of the Tornensis Sámi family living with reindeer on the fells"
               sizes="(max-width: 760px) 100vw, 56vw"
               delay={2.2}
             />
@@ -245,7 +248,6 @@ export default function Home() {
                   sizes="(max-width: 760px) 100vw, 46vw"
                   delay={Number(experience.number) * 2.7}
                 />
-                <span>{experience.number}</span>
               </div>
               <div className="experience-content">
                 <p className="experience-eyebrow">{experience.eyebrow}</p>
@@ -546,7 +548,7 @@ export default function Home() {
 
       <footer>
         <div className="shell footer-main">
-          <a className="brand brand-logo footer-brand" href="#top" aria-label="Kilpisjärvi Reindeer home">
+          <a className="brand brand-logo footer-brand" href="#top" aria-label="Kilpis Reindeer home">
             <Image
               className="brand-logo-image"
               src="/brand/kilpisjarvi-reindeer-logo.png"
@@ -556,10 +558,14 @@ export default function Home() {
               unoptimized
             />
           </a>
-          <a className="footer-book" href="#book">Book your visit <span aria-hidden="true">↗</span></a>
+          <nav className="footer-links" aria-label="Footer navigation">
+            <a href="/faq">Frequently asked questions</a>
+            <a href="/privacy">Privacy policy</a>
+            <a className="footer-book" href="#book">Book your visit <span aria-hidden="true">↗</span></a>
+          </nav>
         </div>
         <div className="shell footer-bottom">
-          <p>Family reindeer experiences in Kilpisjärvi, Finnish Lapland.</p>
+          <p>Yläperän Safarit Oy · Business ID 2954454-6 · Kilpis Reindeer</p>
           <p>© {new Date().getFullYear()} Kilpis Reindeer</p>
         </div>
       </footer>

@@ -81,6 +81,9 @@ export function BookingForm() {
           ? "Your email draft is ready to send to Lars-Aslak."
           : "This opens an email ready to send directly to Lars-Aslak."}
       </p>
+      <p className="form-privacy">
+        Read how booking information is handled in our <a href="/privacy">privacy policy</a>.
+      </p>
     </form>
   );
 }
