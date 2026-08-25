@@ -5,7 +5,7 @@ import { ImageCycle } from "./image-cycle";
 const experiences = [
   {
     number: "01",
-    eyebrow: "Approx. 1.5-2 hours",
+    eyebrow: "Approx. 2 hours",
     title: "Sámi Experience",
     price: "€95",
     text: "Spend time at our family reindeer farm, meet and feed the herd, and hear personal stories about Sámi culture, reindeer herding and life in Kilpisjärvi.",
