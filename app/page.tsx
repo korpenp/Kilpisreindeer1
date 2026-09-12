@@ -309,9 +309,9 @@ export default function Home() {
           </div>
           <div className="museum-copy">
             <p className="eyebrow">Coming this winter</p>
-            <h2 id="museum-title">A new open-air Sámi museum.</h2>
+            <h2 id="museum-title">A new open-air Sámi heritage site.</h2>
             <p>
-              We are proud to announce the opening of our open-air Sámi museum
+              We are proud to announce the opening of our open-air Sámi heritage site
               this coming winter. Built at our family farm, it will share
               stories of Sámi life, craftsmanship and reindeer herding in this
               landscape.
