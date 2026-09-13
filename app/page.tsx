@@ -317,7 +317,7 @@ export default function Home() {
               landscape.
             </p>
             <p className="museum-note">
-              Ask us about including a visit to the heritage site with your time at the farm.
+              Ask us about including a visit to the heritage site with your farm visit trip.
             </p>
             <a className="button button-dark" href="#book">
               Enquire about the heritage site <span aria-hidden="true">→</span>
