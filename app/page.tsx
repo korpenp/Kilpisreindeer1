@@ -302,7 +302,7 @@ export default function Home() {
                 primary: "/farm/museum-building-arch.webp",
                 secondary: "/farm/museum-building-frame.webp",
               }}
-              alt="The new open-air Sámi museum taking shape at the family farm"
+              alt="The new open-air Sámi heritage site taking shape at the family farm"
               sizes="(max-width: 760px) 100vw, 46vw"
               delay={5.8}
             />
@@ -317,10 +317,10 @@ export default function Home() {
               landscape.
             </p>
             <p className="museum-note">
-              Ask us about including a museum visit with your time at the farm.
+              Ask us about including a visit to the heritage site with your time at the farm.
             </p>
             <a className="button button-dark" href="#book">
-              Enquire about the museum <span aria-hidden="true">→</span>
+              Enquire about the heritage site <span aria-hidden="true">→</span>
             </a>
           </div>
         </div>
