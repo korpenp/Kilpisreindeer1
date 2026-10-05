@@ -2,6 +2,8 @@ import Image from "next/image";
 import { BookingForm } from "./booking-form";
 import { ImageCycle } from "./image-cycle";
 
+const FH_BASE = "https://fareharbor.com/embeds/book/kilpisreindeer";
+
 const experiences = [
   {
     number: "01",
@@ -17,6 +19,7 @@ const experiences = [
     },
     alt: "The Tornensis family welcoming guests to meet reindeer and learn about Sámi life",
     imageClass: "experience-image-sami",
+    bookingUrl: `${FH_BASE}/items/760534/?full-items=yes&flow=1708137`,
   },
   {
     number: "02",
@@ -32,6 +35,7 @@ const experiences = [
     },
     alt: "A family reindeer sleigh ride and guided feeding at the farm",
     imageClass: "experience-image-arctic",
+    bookingUrl: `${FH_BASE}/items/760540/?full-items=yes&flow=1708137`,
   },
 ];
 
@@ -156,7 +160,7 @@ export default function Home() {
           <p className="eyebrow eyebrow-light">Family reindeer farm · Kilpisjärvi, Finland</p>
           <h1 id="hero-title">Meet reindeer.<br />Feel at home in Sápmi.</h1>
           <p className="hero-lead">
-            Genuine, family-hosted reindeer experiences in Finnish Lapland —
+            Genuine, family-hosted reindeer experiences in Finnish Lapland:
             warm, personal visits far from crowds and commercial tourism.
           </p>
           <div className="hero-actions">
@@ -185,7 +189,7 @@ export default function Home() {
           <div className="intro-copy">
             <p className="intro-lead">
               We are the Tornensis family. When you visit us, you are welcomed
-              to our family farm — not brought to a staged, mass-tourism
+              to our family farm, not brought to a staged, mass-tourism
               attraction.
             </p>
             <p>
@@ -257,8 +261,9 @@ export default function Home() {
                 <ul>
                   {experience.details.map((detail) => <li key={detail}>{detail}</li>)}
                 </ul>
-                <a className="underlined-link underlined-link-light" href="#book">
-                  Ask about availability <span aria-hidden="true">→</span>
+                {/* FareHarbor Lightframe booking link for this item */}
+                <a className="underlined-link underlined-link-light" href={experience.bookingUrl}>
+                  Book online now <span aria-hidden="true">→</span>
                 </a>
               </div>
             </article>
@@ -425,7 +430,7 @@ export default function Home() {
             <h2>Easy to find.<br />Easy to book.</h2>
           </div>
           <p>
-            Our family farm is in the middle of Kilpisjärvi - close to the
+            Our family farm is in the middle of Kilpisjärvi, close to the
             hotels, easy for coaches and simple to reach without a transfer.
           </p>
         </div>
@@ -461,7 +466,7 @@ export default function Home() {
             <p>
               Seasonal coaches travel between Tromsø and Kilpisjärvi. In
               winter, use the Arctic Route; in summer, check Eskelinen’s
-              Rovaniemi–Tromsø service.
+              Rovaniemi to Tromsø service.
             </p>
             <div className="arrival-links">
               <a
@@ -497,7 +502,7 @@ export default function Home() {
             <h3>In the heart of the village.</h3>
             <p>
               Most coaches stop at K-Market Kilpisjärvi in the village centre.
-              Our family farm is at Harjuntie 15, 99490 Kilpisjärvi — in the
+              Our family farm is at Harjuntie 15, 99490 Kilpisjärvi, in the
               middle of the village and within walking distance of local hotels.
             </p>
             <a

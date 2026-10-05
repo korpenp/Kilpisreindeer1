@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -25,6 +26,9 @@ export const metadata: Metadata = {
   },
 };
 
+const FAREHARBOR_FLOW_URL =
+  "https://fareharbor.com/embeds/book/kilpisreindeer/?full-items=yes&flow=1708137";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -34,6 +38,21 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
+
+        {/* FareHarbor floating book button for flow #1708137 */}
+        <a
+          className="fh-floating-book"
+          href={FAREHARBOR_FLOW_URL}
+          aria-label="Book online now"
+        >
+          Book now
+        </a>
+
+        {/* FareHarbor Lightframe API */}
+        <Script
+          src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
