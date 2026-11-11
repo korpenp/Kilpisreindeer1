@@ -507,7 +507,7 @@ export default function Home() {
             </p>
             <a
               className="button button-light"
-              href="https://www.google.com/maps/dir/?api=1&destination=Salmivaarantie%206%2C%2099490%20Kilpisj%C3%A4rvi%2C%20Finland"
+              href="https://www.google.com/maps/search/?api=1&query=Salmivaarantie+6,+99490+Kilpisj%C3%A4rvi,+Finland"
               target="_blank"
               rel="noreferrer"
             >
