@@ -502,12 +502,12 @@ export default function Home() {
             <h3>In the heart of the village.</h3>
             <p>
               Most coaches stop at K-Market Kilpisjärvi in the village centre.
-              Our family farm is at Harjuntie 15, 99490 Kilpisjärvi, in the
+              Our family farm is at Salmivaarantie 6, 99490 Kilpisjärvi, in the
               middle of the village and within walking distance of local hotels.
             </p>
             <a
               className="button button-light"
-              href="https://www.google.com/maps/dir/?api=1&destination=Harjuntie%2015%2C%2099490%20Kilpisj%C3%A4rvi%2C%20Finland"
+              href="https://www.google.com/maps/dir/?api=1&destination=Salmivaarantie%206%2C%2099490%20Kilpisj%C3%A4rvi%2C%20Finland"
               target="_blank"
               rel="noreferrer"
             >
@@ -543,7 +543,7 @@ export default function Home() {
               </a>
               <p>
                 <span>Farm address</span>
-                Harjuntie 15, 99490 Kilpisjärvi, Finland
+                Salmivaarantie 6, 99490 Kilpisjärvi, Finland
               </p>
             </div>
           </div>
